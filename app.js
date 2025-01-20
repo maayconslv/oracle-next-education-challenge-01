@@ -19,11 +19,15 @@ function renderFriend(friendName) {
   
   friendsList.push(friendName);
 
-  friendNameListItem.classList.add('friendNameListItem');
   friendNameListItem.textContent = friendName;
 }
 
 function sortearAmigo() {
+  if (friendsList.length <= 3) {
+    alert("Por favor, adicione mais amigos para sortear.");
+    return;
+  }
+
   const selectedFriend = document.querySelector(".result-list");
   const selectedNumber = Math.floor(Math.random() * friendsList.length);
   
