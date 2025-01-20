@@ -11,9 +11,6 @@ function adicionarAmigo() {
   renderFriend(friendName);
 }
 
-let nome = "nome";
-let nome = "nome";
-
 function renderFriend(friendName) {
   const friendNameListItem = document.createElement("li");
   const friendNameListContainer = document.querySelector(".name-list");
